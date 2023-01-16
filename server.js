@@ -8,46 +8,17 @@
  * Cyclic Link: _______________________________________________________________
  * ********************************************************************************/
 
-/*** set up ***/
-// [Terminal]
-// npm init
-// npm install express
-// npm install cors
-// npm install mongoose
-// npm install dotenv
-
-// [GitHub things]
-// git init
-// git remote add origin repo-url
-// git remote set-url origin new-repo-url  // to change origin
-// git remote -v // check current origin
-// git status // to check status (main, brunch, etc)
-// git remote push origin
-
-// if you got errors like below with "git push origin master"
-// error: src refspec master does not match any
-// error: failed to push some refs to
-// git checkout -b master
-
 const express = require("express");
 const app = express();
-// const path = require('path')
-// const bodyParser = require('body-parser')
-// app.use(bodyParser.json());
-// const data = require("./module/data");
 
-// status
-// 201: Created
-// 204: No Content
-// 500: Internal Server Error
 const MoviesDB = require("./modules/moviesDB.js");
 const db = new MoviesDB();
 
 const HTTP_PORT = process.env.PORT || 8080;
 
 const cors = require("cors");
-require("dotenv").config();
 app.use(cors());
+require("dotenv").config();
 app.use(express.json());
 
 app.get("/", (req, res) => {
@@ -64,7 +35,7 @@ db.initialize(process.env.MONGODB_CONN_STRING)
     console.log(err);
   });
 
-// *** A1:ADD ROUTS ***
+// *** ADD ROUTS ***
 // ADD A NEW MOVIE
 // return the newly created movie object or error msg
 app.post("/api/movies", (req, res) => {

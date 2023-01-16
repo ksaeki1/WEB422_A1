@@ -1,0 +1,30 @@
+/*** set up ***/
+// [Terminal]
+// npm init
+// npm install express
+// npm install cors
+// npm install mongoose
+// npm install dotenv
+
+// [GitHub things]
+// git init
+// git remote add origin repo-url
+// git remote set-url origin new-repo-url  // to change origin
+// git remote -v // check current origin
+// git status // to check status (main, brunch, etc)
+// git remote push origin
+
+// if you got errors like below with "git push origin master"
+// error: src refspec master does not match any
+// error: failed to push some refs to
+// git checkout -b master
+
+// status
+// 201: Created
+// 204: No Content
+// 500: Internal Server Error
+
+
+// const path = require('path')
+// const bodyParser = require('body-parser')
+// app.use(bodyParser.json());
