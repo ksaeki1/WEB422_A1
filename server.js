@@ -4,8 +4,8 @@
  * No part of this assignment has been copied manually or electronically from any other source
  * (including web sites) or distributed to other students.
  *
- * Name: Koji Saeki Student ID: 148443203 Date: 2023/01/??
- * Cyclic Link: _______________________________________________________________
+ * Name: Koji Saeki Student ID: 148443203 Date: 2023/01/15
+ * Cyclic Link: https://real-yoke-fawn.cyclic.app/
  * ********************************************************************************/
 
 const express = require("express");
